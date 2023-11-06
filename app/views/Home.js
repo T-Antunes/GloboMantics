@@ -1,10 +1,12 @@
 import { StyleSheet, View } from "react-native";
 import Hero from '../components/Hero';
+import Menu from "../components/Menu";
 
 const HomeScreen = () => {
     return (
         <View style={styles.container}>
             <Hero />
+            <Menu />
         </View>
     );
 };
