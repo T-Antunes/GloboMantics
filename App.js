@@ -9,6 +9,8 @@ import Blog from './app/views/Blog.js';
 import BlogDetail from './app/views/BlogDetail.js';
 import Quiz from './app/views/Quiz.js';
 import QuizFinish from './app/views/QuizFinish.js';
+import Video from './app/views/Video.js';
+import VideoDetail from './app/views/VideoDetail.js';
 
 const Stack = createNativeStackNavigator();
 
@@ -18,6 +20,16 @@ const App = () => {
       <Stack.Navigator
         initialRouteName='Home'
       >
+        <Stack.Screen
+          name='VideoDetail'
+          component={VideoDetail}
+          options={{ title: 'Watch Lesson' }}
+        />
+        <Stack.Screen
+          name='Videos'
+          component={Video}
+          options={{ title: 'Video Lessons' }}
+        />
         <Stack.Screen
           name='QuizFinish'
           component={QuizFinish}
@@ -56,7 +68,7 @@ const App = () => {
         <Stack.Screen
           name='Home'
           component={HomeScreen}
-          options={{ header: ()=><GloboHeader />}}
+          options={{ header: () => <GloboHeader /> }}
         />
       </Stack.Navigator>
     </NavigationContainer>

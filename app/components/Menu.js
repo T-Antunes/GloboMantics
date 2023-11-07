@@ -15,7 +15,7 @@ const Menu = () => {
             <View style={styles.buttonRow}>
                 <Pressable
                     style={styles.buttonStyles}
-                    onPress={() => navigation.navigate('Lessons')}
+                    onPress={() => navigation.navigate('Videos')}
                 >
                     <Text style={styles.buttonText}>Lessons</Text>
                 </Pressable>
